@@ -7,7 +7,7 @@ import { AuthService } from 'src/app/authentication/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  username: string = '';
+  email: string = '';
   password: string = '';
   constructor(private authService: AuthService) { }
 
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   login() {
     // Implement your login logic here
     console.log('Login clicked');
-    this.authService.login(this.username, this.password);
+    this.authService.login(this.email, this.password);
   }
   ngOnInit(): void {
   }

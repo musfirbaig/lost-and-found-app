@@ -8,12 +8,12 @@ import { AuthService } from 'src/app/authentication/auth.service';
 })
 export class RegisterComponent implements OnInit {
 
-  username: string = '';
+  email: string = '';
   password: string = '';
   constructor(private authService: AuthService) { }
 
   register(){
-    this.authService.register(this.username, this.password);
+    this.authService.register(this.email, this.password);
   }
 
   ngOnInit(): void {
