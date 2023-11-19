@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserPageComponent implements OnInit {
 
-  constructor() { }
+  selectedNavigationBtn!: number;
+  constructor() {
+    // this.selectedNavigationBtn = 2;
+   }
 
   ngOnInit(): void {
+    // this.selectedNavigationBtn = 1;
+  }
+
+  assignBtnValue(btnValue: number): void {
+    this.selectedNavigationBtn = btnValue;
   }
 
 }

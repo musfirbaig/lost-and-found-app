@@ -15,6 +15,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { FormsModule } from '@angular/forms';
+import { ReportLostItemComponent } from './components/user-page/report-lost-item/report-lost-item.component';
+import { ReportFoundItemComponent } from './components/user-page/report-found-item/report-found-item.component';
+import { MyReportedItemsComponent } from './components/user-page/my-reported-items/my-reported-items.component';
 
 
 
@@ -27,7 +30,10 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     UserPageComponent,
-    UserSidePanelComponent
+    UserSidePanelComponent,
+    ReportLostItemComponent,
+    ReportFoundItemComponent,
+    MyReportedItemsComponent
   ],
   imports: [
     BrowserModule,
