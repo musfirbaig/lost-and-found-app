@@ -10,7 +10,9 @@ import { environment } from 'src/environments/environment';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserPageComponent } from './components/user-page/user-page.component';
+import { UserSidePanelComponent } from './components/user-page/user-side-panel/user-side-panel.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { FormsModule } from '@angular/forms';
 
@@ -25,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     UserPageComponent,
+    UserSidePanelComponent
   ],
   imports: [
     BrowserModule,
